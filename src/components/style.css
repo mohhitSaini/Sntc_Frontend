@@ -1,0 +1,92 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#logo {
+    margin: 12px 12px;
+}
+
+#logo img {
+    height: 58px;
+    width: 56px;
+    border-radius: 40px;
+    margin: 12px 12px;
+}
+
+#navbar {
+    display: flex;
+    position: relative;
+    text-align: center;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+
+}
+
+#navbar ul {
+    display: flex;
+    text-align: center;
+}
+
+#navbar ul li {
+    list-style: none;
+
+}
+
+#navbar ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 3px 22px;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.3rem;
+    /* font-family: 'Ubuntu'; */
+    margin: 34px 8px;
+}
+#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+}
+#clubs .dropdown {
+    display: inline-block;
+    position: relative;
+}
+#clubs .dropdown:hover{
+    width: 135px;
+        padding: 0px 26px;
+}
+
+#clubs .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+#clubs .dropdown:hover .dropdown-content {
+    display: block;
+    margin: -1px -25px;
+}
+
+#clubs .dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+    
+}
+
+#clubs .dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+   
+}
