@@ -1,105 +1,40 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    font-family: Ubuntu;
 }
 
-#logo {
-    margin: 12px 12px;
+.navbar .navbar-nav {
+    margin: 0 75px;
 }
 
-#logo img {
-    height: 58px;
-    width: 56px;
-    border-radius: 2px;
-    margin: 12px 12px;
+.navbar .nav-item a {
+    margin: 0 10px;
+    border-radius: 19px;
+    color: white;
 }
 
-#navbar {
-    display: flex;
-    position: relative;
-    text-align: center;
+.navbar .nav-item a:hover {
+    color: black;
+    background-color: white;
 }
 
-#navbar::before {
-    content: "";
+.navbar .nav-item .dropdown-item {
+    color: black;
+    border-radius: 0px;
+    margin: 8px 0px;
+}
+
+.navbar::before {
+    content: '';
     background-color: black;
     position: absolute;
     height: 100%;
     width: 100%;
     opacity: 0.5;
     z-index: -1;
-
 }
-
-#navbar ul {
-    display: flex;
-    text-align: center;
+.mynav .toggle{
+    margin:8px 0px;
 }
-
-#navbar ul li {
-    list-style: none;
-
-}
-
-#navbar ul li a {
-    display: block;
-    text-decoration: none;
-    padding: 0px 5px;
-    border-radius: 20px;
-    color: white;
-    font-size: 1.1rem;
-    /* font-family: 'Ubuntu'; */
-    margin: 34px 8px;
-}
-#navbar ul li a:hover {
-    background-color: white;
-    color: black;
-}
-#navbar .toggle{
-    display: block;
-        /* text-decoration: none; */
-        padding: 0px 5px;
-        /* border-radius: 20px; */
-        /* color: white; */
-        /* font-size: 1.1rem; */
-        /* font-family: 'Ubuntu'; */
-        margin: 34px 8px;
-}
-.form-check{
-    margin:2px 78px;
-}
-#clubs .dropdown {
-    display: inline-block;
-    position: relative;
-}
-#clubs .dropdown:hover{
-    width: 135px;
-        padding: 0px 26px;
-}
-
-#clubs .dropdown-content {
-    display: none;
-    position: absolute;
-    width: 100%;
-    overflow: auto;
-    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
-}
-
-#clubs .dropdown:hover .dropdown-content {
-    display: block;
-    margin: -1px -25px;
-}
-
-#clubs .dropdown-content a {
-    display: block;
-    color: #000000;
-    padding: 5px;
-    text-decoration: none;
-    
-}
-
-#clubs .dropdown-content a:hover {
-    color: #FFFFFF;
-    background-color: #00A4BD;
-   
+li.nav-item.toggler{
+    margin-left: 200px;
 }
